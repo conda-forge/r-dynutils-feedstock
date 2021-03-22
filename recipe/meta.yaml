@@ -1,4 +1,4 @@
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dynutils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dynutils/dynutils_{{ version }}.tar.gz
-  sha256: 5d08afd3d758c31eef5ffde640f8c30eac13ee143f15c22f8ac4689d3df896ed
+  sha256: 3dc706a00163b8056bec2b2f2225c0fe2cc71db2963df0df782f0c45b9e61047
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -68,12 +68,10 @@ test:
 about:
   home: http://github.com/dynverse/dynutils
   license: GPL-3
-  summary: Provides common functionality for the 'dynverse' packages. 'dynverse' is created to
-    support the development, execution, and benchmarking of trajectory inference methods.
-    For more information, check out <https://dynverse.org>.
+  summary: Provides common functionality for the 'dynverse' packages. 'dynverse' is created to support the development, execution, and benchmarking of trajectory inference methods. For more information, check out <https://dynverse.org>.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
