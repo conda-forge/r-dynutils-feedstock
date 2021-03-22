@@ -3,7 +3,7 @@ About r-dynutils
 
 Home: http://github.com/dynverse/dynutils
 
-Package license: GPL-3
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dynutils-feedstock/blob/master/LICENSE.txt)
 
