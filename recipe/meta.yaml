@@ -1,4 +1,4 @@
-{% set version = "1.0.10" %}
+{% set version = "1.0.11" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dynutils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dynutils/dynutils_{{ version }}.tar.gz
-  sha256: b1baaeb35815210a804611f129a2ac2929d41591575a8f126c57d658c1b81ed8
+  sha256: 09ce9efda019e5c345ad6a7131f41f7fe9c8458c1b105191d8618416ea125619
 
 build:
   merge_build_host: true  # [win]
