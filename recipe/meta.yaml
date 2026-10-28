@@ -1,4 +1,4 @@
-{% set version = "1.0.12" %}
+{% set version = "1.0.13" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dynutils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dynutils/dynutils_{{ version }}.tar.gz
-  sha256: 7a43dd703276931a33d810df99239c7d60e757300bcd1f97bf132023a4f8d014
+  sha256: 9bc22b67eeeb9bc2e4e1041d6e8acc253e0f17f82813e998d18f9d6b3c5fee18
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
